@@ -13,7 +13,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: actions/step-node@v4
+    - uses: actions/actions-node@v4
       name: Setup nodeJS Version
       with:
         version: ${{ inputs.node-version }}
