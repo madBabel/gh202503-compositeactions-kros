@@ -1,12 +1,12 @@
 name: Cache Node and NPM Dependencies
-description: Cache Node and NPM dependencies to speed up workflows.
+description: Cache Node and NPM dependencies to speed up workflows
 inputs:
   node-version:
     description: The version of Node.js to use.
     required: true
     default: 20.x
   working-dir:
-    description: The working directory to cache dependencies from.
+    description: The working directory to cache dependencies from
     required: false
     default: '.'
 
