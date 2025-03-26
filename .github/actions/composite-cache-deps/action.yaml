@@ -21,7 +21,7 @@ runs:
       name: Cache NPM dependencies
       id: cache
       with:
-        path: ${{ input.working-dir }}/node_modules
+        path: ${{ inputs.working-dir }}/node_modules
         key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
     - run: npm ci
       name: Install NPM dependencies
